@@ -5,16 +5,18 @@ import HeaderBottom from "./HeaderBottom";
 export default (props) => {
   return (
     <div>
-      <HeaderTop 
+      <HeaderTop
         title="Ganhe R$ 10,00 de desconto no frete" 
-        color="#181818"
+        background='#212529'
+        color='#fff'
         align="center"
-      >
-        <div>ada</div>
-      </HeaderTop>
-      <HeaderBottom>
-        <div className="container"></div>
-      </HeaderBottom>
+      />
+      <HeaderBottom
+        title="JordanShoes" 
+        background='#fff'
+        color='#212529'
+        align="center" 
+      />
     </div>
   );
 };
