@@ -1,3 +1,5 @@
+@import 'bootstrap/scss/bootstrap.scss';
+
 .main-banner{
   max-height: 378px;
   min-height: 378px;
@@ -7,7 +9,7 @@
     z-index: 2;
     opacity: 0.6;
     position: absolute;
-    background-color: #181818;
+    background-color: $dark;
   }
   img{
     object-fit: cover;
@@ -17,5 +19,18 @@
   }
   p{
     font-size: 18px;
+  }
+}
+
+@include media-breakpoint-down(sm) { 
+.main-banner{
+  max-height: 378px;
+  min-height: 378px;    
+  h2{
+      font-size: 26px!important;
+    }
+    p{
+      font-size: 16px;
+    }
   }
 }

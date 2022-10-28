@@ -10,7 +10,7 @@ export default (props) => {
   return (
     <section className="pb-2">
       <div className="container">
-        <div className="d-flex row row-cols-lg-4 row-cols-sm-2 wrap" style={styleAline}>
+        <div className="d-flex row row-cols-sm-4 row-cols-2 wrap" style={styleAline}>
           <Product/>
           <Product/>
           <Product/>

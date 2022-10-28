@@ -19,7 +19,7 @@ export default (props) => {
         />
         <div className="container zIndex-2" style={styleAlignY}>
           <div className="d-flex" style={styleAlignX}>
-            <div className="d-flex flex-column col-6">
+            <div className="d-flex flex-column col-lg-6 col-9">
               <h2 style={color}>{props.title}</h2>
               <p style={color}>{props.description}</p>
             </div>
