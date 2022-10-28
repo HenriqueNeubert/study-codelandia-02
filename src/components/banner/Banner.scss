@@ -1,0 +1,21 @@
+.main-banner{
+  max-height: 378px;
+  min-height: 378px;
+  &:before{
+    content: '';
+    inset: 0;
+    z-index: 2;
+    opacity: 0.6;
+    position: absolute;
+    background-color: #181818;
+  }
+  img{
+    object-fit: cover;
+  }
+  h2{
+    font-size: 32px;
+  }
+  p{
+    font-size: 18px;
+  }
+}

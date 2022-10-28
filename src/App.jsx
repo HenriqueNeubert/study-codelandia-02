@@ -1,10 +1,34 @@
 import React from "react";
-import Header from "./components/header/Header";
+import Banner from "./components/banner/Banner";
+import HeaderTop from "./components/header/HeaderTop"
+import HeaderBottom from "./components/header/HeaderBottom"
 
 function App() {
-  return <div className="App">
-    <Header></Header>
-  </div>;
+  return <>
+    <header>
+      <HeaderTop
+        title="Ganhe R$ 10,00 de desconto no frete" 
+        background='#212529'
+        color='#fff'
+        align="center"
+      />
+      <HeaderBottom
+        title="JordanShoes" 
+        background='#fff'
+        color='#212529'
+        align="center" 
+      />
+    </header>
+    <Banner
+      color='#fff'
+      title="A melhor loja de Jordan"
+      description="O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan."
+      alignX="end"
+      alignY="center"
+    >
+
+    </Banner>
+  </>;
 }
 
 export default App;

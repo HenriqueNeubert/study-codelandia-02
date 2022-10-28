@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.scss"
 
 export default (props) => {
   const styleText = {
@@ -11,7 +12,9 @@ export default (props) => {
   return (
     <div style={styleContainer}>
       <div style={styleText} className="container d-flex py-3">
-        {props.title}
+        <h1 className="title">  
+          {props.title}
+        </h1>
       </div>
     </div>
   );
