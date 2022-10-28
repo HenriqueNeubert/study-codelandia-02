@@ -1,6 +1,7 @@
 import React from "react";
 import Band from "./components/Band";
 import BandTitle from "./components/BandTitle";
+import Button from "./components/buttons/Button";
 import Banner from "./components/banner/Banner";
 import ListProduct from "./components/product/ListProduct";
 
@@ -33,16 +34,33 @@ function App() {
       ></Banner>
       <div>
         <BandTitle
-          className="py-5"
           color="#212529"
           background="#fff"
           alignX="center"
           title="Destaques"
           description="Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. "
+        />        
+        <ListProduct quantity="9" alignX="center" />
+        <ListProduct quantity="9" alignX="center" />        
+      </div>
+      <div>
+        <BandTitle
+          color="#212529"
+          background="#fff"
+          alignX="center"
+          title="Novidades"
+          description="Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. "
         />
-        <div className="mb-5">
-          <ListProduct quantity="9" alignX="center" />
-          <ListProduct quantity="9" alignX="center" />
+        <ListProduct quantity="9" alignX="center" />
+        <ListProduct quantity="9" alignX="center" />
+      </div>
+      <div className="py-5">
+        <div className="container text-center">
+          <Button
+            title="Ver Mais"
+            color="#fff"
+            backgroundColor="#212529"
+          />
         </div>
       </div>
       <footer>

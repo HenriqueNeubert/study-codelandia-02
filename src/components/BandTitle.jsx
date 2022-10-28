@@ -9,7 +9,7 @@ export default (props) => {
   const styleContainer = { backgroundColor: props.background };
 
   return (
-    <section style={styleContainer} class="py-5">
+    <section style={styleContainer} class="pt-5 pb-4">
       <div style={styleText} className="container d-flex flex-column py-3">
         <h2>
           { props.title }
