@@ -1,24 +1,26 @@
 import React from "react";
+import Band from "./components/Band";
+import BandTitle from "./components/BandTitle";
 import Banner from "./components/banner/Banner";
-import Footer from "./components/footer/Footer";
-import HeaderTop from "./components/header/HeaderTop";
-import HeaderBottom from "./components/header/HeaderBottom";
 
 function App() {
   return (
     <>
       <header>
-        <HeaderTop
+        <Band
           title="Ganhe R$ 10,00 de desconto no frete"
           background="#212529"
           color="#fff"
           align="center"
+          tag="p"
         />
-        <HeaderBottom
+        <Band
           title="JordanShoes"
           background="#fff"
           color="#212529"
           align="center"
+          tag="h1"
+          class="title"
         />
       </header>
       <Banner
@@ -28,11 +30,22 @@ function App() {
         alignX="end"
         alignY="center"
       ></Banner>
-      <Footer
-        title="Todos os direitos reservados."
-        background="#212529"
+      <BandTitle
         color="#fff"
-        align="start"></Footer>
+        background="#212529"
+        alignX="center"
+        title="Destaques"
+        description="Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. "
+      />
+      <footer>
+        <Band
+          title="Todos os direitos reservados."
+          background="#212529"
+          color="#fff"
+          align="center"
+          tag="p"
+        />
+      </footer>
     </>
   );
 }
