@@ -2,6 +2,7 @@ import React from "react";
 import Band from "./components/Band";
 import BandTitle from "./components/BandTitle";
 import Banner from "./components/banner/Banner";
+import ListProduct from "./components/product/ListProduct";
 
 function App() {
   return (
@@ -30,13 +31,20 @@ function App() {
         alignX="end"
         alignY="center"
       ></Banner>
-      <BandTitle
-        color="#fff"
-        background="#212529"
-        alignX="center"
-        title="Destaques"
-        description="Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. "
-      />
+      <div>
+        <BandTitle
+          className="py-5"
+          color="#212529"
+          background="#fff"
+          alignX="center"
+          title="Destaques"
+          description="Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. "
+        />
+        <div className="mb-5">
+          <ListProduct quantity="9" alignX="center" />
+          <ListProduct quantity="9" alignX="center" />
+        </div>
+      </div>
       <footer>
         <Band
           title="Todos os direitos reservados."
